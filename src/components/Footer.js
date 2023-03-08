@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook } from "react-icons/fa";
+
 function Footer() {
   const footerYear = new Date().getFullYear();
   return (
@@ -8,9 +8,7 @@ function Footer() {
         <a
           className=" hover:scale-125 text-3xl "
           href="https://www.facebook.com/Mahalaxmi-Trading-Company-Bhilwara-100906727945021/"
-        >
-          <FaFacebook />
-        </a>
+        ></a>
       </div>
       <div className="flex flex-col justify-center my-3 items-center">
         Copyright &copy; {footerYear} All Rights Reserved
