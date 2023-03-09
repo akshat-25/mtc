@@ -32,21 +32,6 @@ function Contact() {
         <div className="lg:w-1/3 flex justify-start px-14 my-5">
           <a
             className="p-1 rounded-xl  w-20 h-20 flex items-center justify-center shadow-blue-500 hover:scale-110"
-            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mahalaxmitradingmtc@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img className="h-20" src={email} alt="" srcSet="" />
-          </a>
-          <div className="my-2 px-2">
-            <h3 className=" mb-1 text-xl tracking-wider">Email Us</h3>
-            <p className="text-gray-500">mahalaxmitradingmtc@gmail.com</p>
-          </div>
-        </div>
-
-        <div className="lg:w-1/3 flex justify-start px-14">
-          <a
-            className="p-1 rounded-xl  w-20 h-20 flex items-center justify-center shadow-blue-500 hover:scale-110"
             href="https://www.google.com/maps/@25.3334,74.6168,17z?hl=en"
           >
             <img className="h-20" src={phone} alt="" srcSet="" />
