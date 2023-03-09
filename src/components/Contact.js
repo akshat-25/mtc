@@ -47,7 +47,7 @@ function Contact() {
         <div className="lg:px-2 flex justify-start">
           <a
             className="p-1 rounded-xl w-20 h-20 flex items-center justify-center shadow-blue-500 hover:scale-110"
-            href="callto: +91-9413356417"
+            href="tel: +91-9413356417"
           >
             <img className="h-20" src={phone} alt="" srcSet="" />
           </a>
