@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useState } from "react";
 
 function Products() {
@@ -563,6 +562,8 @@ function Products() {
     },
   ];
 
+  const [cate, setCate] = useState(false);
+
   const [items, setItems] = useState(
     Photos.filter((currElem) => {
       return currElem.category === "hydraulic valves";
@@ -585,7 +586,9 @@ function Products() {
       </button>
     );
   });
-
+  const handleChange = (e) => {
+    setCate(filterItem(e.target.value));
+  };
   return (
     <div name="products" className="max-w-screen  bg-slate-50 ">
       <div className="pb-5 pt-10 justify-center flex ">
@@ -593,9 +596,41 @@ function Products() {
           Our Products
         </p>
       </div>
-      <ul className="lg:flex lg:flex-row lg:justify-center justify-center flex flex-col  mx-9 my-6  px-14">
+      <ul className="lg:flex lg:flex-row lg:justify-center ml-5 justify-center flex-col md:flex hidden">
         {renderList}
       </ul>
+      <div
+        onClick={() => setCate(!cate)}
+        className="cursor-pointer pr-4 z-10 text-blue-800 md:hidden "
+      >
+        {
+          <div className="flex justify-center">
+            <div className="relative inline-block">
+              <select
+                className="bg-white py-2 px-4 border border-gray-400 rounded shadow appearance-none leading-tight focus:outline-none focus:shadow-outline capitalize"
+                value={renderList}
+                onChange={handleChange}
+              >
+                <option value="">Select Product Category</option>
+                {categ.map((option) => (
+                  <option key={option.id} value={option.category}>
+                    {option.name}
+                  </option>
+                ))}
+              </select>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg
+                  className="fill-current h-4 w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M10 12a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 1.414-1.414L10 9.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 10 12z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
       <div className="my-3 p-10 mx-10">
         <div className="container grid grid-cols-2 gap-4 lg:gap-4 lg:grid-cols-7 ">
           {items.map((elem) => {
