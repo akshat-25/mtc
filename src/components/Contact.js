@@ -28,7 +28,22 @@ function Contact() {
             <p className="text-gray-500">Bhilwara 311001 , Rajasthan</p>
           </div>
         </div>
-        <div className="lg:px-2 flex justify-start">
+        <div className="lg:px-2 flex justify-start mt-5">
+          <a
+            className="p-1 rounded-xl w-20 h-20 flex items-center justify-center shadow-blue-500 hover:scale-110"
+            href="https://www.google.com/maps/@25.3334,74.6168,17z?hl=en"
+          >
+            <img className="h-20" src={email} alt="" srcSet="" />
+          </a>
+          <div className="">
+            <h3 className=" mb-1 text-xl tracking-wider ml-2">Mail Us</h3>
+            <p className="text-gray-500 tracking-wider">
+              mahalaxmitradingmtc@gmail.com
+            </p>
+            <p className="text-gray-500"> </p>
+          </div>
+        </div>
+        {/* <div className="lg:px-2 flex justify-start">
           <a
             className="p-1 rounded-xl  w-20 h-20 flex items-center justify-center shadow-blue-500 hover:scale-110"
             href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mahalaxmitradingmtc@gmail.com"
@@ -43,7 +58,7 @@ function Contact() {
               mahalaxmitradingmtc@gmail.com
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="lg:px-2 flex justify-start">
           <a
             className="p-1 rounded-xl w-20 h-20 flex items-center justify-center shadow-blue-500 hover:scale-110"

@@ -6,7 +6,7 @@ function Footer() {
     <footer className="mt-8 pt-3 pb-2 flex flex-col bg-slate-800 text-white p-2">
       <div className="flex flex-row space-x-5 text-lg justify-center">
         <a
-          className=" hover:scale-125 text-3xl "
+          className=" hover:scale-125 text-3xl"
           href="https://www.facebook.com/Mahalaxmi-Trading-Company-Bhilwara-100906727945021/"
         >
           <FaFacebook />
