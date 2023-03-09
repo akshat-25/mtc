@@ -1,10 +1,7 @@
 import React from "react";
 function About() {
   return (
-    <div
-      name="about"
-      className="w-full bg-slate-50 font-display tracking-wider"
-    >
+    <div name="about" className="w-full bg-slate-50 font-bold tracking-wider">
       <div className="max-w-screen lg:px-14 px-8 flex flex-col justify-center items-center">
         <div className="pb-2 my-4">
           <p className="text-4xl inline border-b-4 border-blue-800 font-display tracking-wider">
