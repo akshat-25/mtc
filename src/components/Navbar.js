@@ -27,11 +27,11 @@ function Navbar() {
   ];
   return (
     <>
-      <div className=" top-0 w-full h-20 px-4 flex items-center rounde justify-end bg-gradient-to-r to-cyan-500 from-slate-50">
+      <div className=" top-0 w-full h-20 lg:px-4 flex items-center rounde justify-end bg-gradient-to-r to-cyan-500 from-slate-50">
         <div className=" top-0 border-gray-200 w-full h-20 px-4 flex items-center">
           <img className="h-12 mr-3 " src={mtc} alt="" srcSet="" />
           <div className="flex flex-col justify-start ">
-            <span className="self-center lg:text-xl text-sm  text-blue-800 font-display tracking-wide">
+            <span className="self-center lg:text-xl text-sm text-blue-800 font-display tracking-wide">
               Mahalaxmi Trading Company
             </span>
             <p className="font-display tracking-wide lg:text-xl text-sm">
